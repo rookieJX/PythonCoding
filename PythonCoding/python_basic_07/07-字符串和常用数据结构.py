@@ -268,10 +268,100 @@ def main_List():
     print(fruit_tuple)
 
 
+# ****************************
+# 使用集合
+# ****************************
+
+def main_dict():
+    # 定义集合
+    set1 = {1,2,3,4,5,5,6,5}
+    print('**********定义集合**********')
+    print(set1)
+
+    # 集合元素个数
+    print('**********集合元素个数**********')
+    print(len(set1))
+
+    # 快速创建集合
+    print('**********快速创建集合**********')
+    set2 = set(range(1,10))
+    print(set2)
+
+    # 集合中添加元素
+    print('**********集合中添加元素**********')
+    set1.add(100)
+    set1.add(1)
+    print(set1)
+
+    # 更新集合
+    print('**********更新集合**********')
+    set2.update([11,12])
+    print(set2)
+
+    # remove的元素如果不存在会引发KeyError
+    print('**********remove的元素如果不存在会引发KeyError**********')
+    set1.remove(1)
+    print(set1)
+
+
+    # 遍历集合容器
+    print('**********遍历集合容器**********')
+    for elem in set2:
+        print(elem,end=' ')
+    print()
+
+
+    # 将元组转换成集合
+    print('**********将元组转换成集合**********')
+    set3 = set((1,2,3,3,2,1))
+    print(set3)
+
+    # 删除第一个元素
+    print('**********删除第一个元素**********')
+    print(set3.pop())
+
+    # 集合的交集
+    print('**********集合的交集**********')
+    print('set1 = ',set1)
+    print('set2 = ',set2)
+    print(set1 & set2)
+    print(set1.intersection(set2))
+
+    # 集合的并集
+    print('**********集合的并集**********')
+    print('set1 = ',set1)
+    print('set2 = ',set2)
+    print(set1 | set2)
+    print(set1.union(set2))
+
+    # 集合的差集
+    print('**********集合的差集**********')
+    print('set1 = ', set1)
+    print('set2 = ', set2)
+    print(set1 - set2)
+    print(set1.difference(set2))
+
+    # 集合对称差
+    print('**********集合对称差**********')
+    print('set1 = ', set1)
+    print('set2 = ', set2)
+    print(set1 ^ set2)
+    print(set1.symmetric_difference(set2))
+
+    # 判断子集
+    print('**********判断子集**********')
+    print(set2 <= set1)
+    print(set2.issubset(set1))
+    
+    # 判断超集
+    print('**********判断超集**********')
+    print(set1 >= set2)
+    print(set1.issuperset(set2))
+
 
 
 if __name__ == '__main__':
     # main()
     # main_list()
-    main_List()
-
+    # main_List()
+    main_dict()
