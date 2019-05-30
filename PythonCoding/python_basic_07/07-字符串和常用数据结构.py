@@ -219,13 +219,59 @@ def main_list():
     f = (x ** 2 for x in  range(1,1000))
     print(sys.getsizeof(f)) # 相比生成时生成器不占用存储的空间
     print(f)
-    
+
+
+
+# ****************************
+# 使用元组
+# ****************************
+
+def main_List():
+    # 定义元组
+    t = ('骆昊', 38, True, '四川成都')
+    print('**********定义元组**********')
+    print(t)
+
+    # 获取元组中元素
+    print('**********获取元组中元素**********')
+    print(t[0])
+
+    # 遍历元组中的值
+    print('**********遍历元组中的值**********')
+    for member in t:
+        print(member)
+
+    # 重新给元组赋值
+    print('**********重新给元组赋值**********')
+    # t[0] = 'Ableson'
+    print('会报错')
+
+    # 变量t重新引用了新的元组原来的元组将被垃圾回收
+    print('**********变量t重新引用了新的元组原来的元组将被垃圾回收**********')
+    t = ('王大锤', 20, True, '云南昆明')
+    print(t)
+
+    # 将元组转换成列表
+    print('**********将元组转换成列表**********')
+    person = list(t)
+    print(person)
+
+    # 列表是可修改元素的
+    print('**********列表是可修改元素的**********')
+    person[0] = 'Ableson'
+    print(person)
+
+    # 将列表转换为元组
+    print('**********将列表转换为元组**********')
+    fruit_list = ['apple','banana','orange']
+    fruit_tuple = tuple(fruit_list)
+    print(fruit_tuple)
 
 
 
 
 if __name__ == '__main__':
     # main()
-    main_list()
-
+    # main_list()
+    main_List()
 
