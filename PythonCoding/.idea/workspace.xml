@@ -14,15 +14,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python_basic_05/05-总结和练习.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_basic_06/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -52,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="261" column="17" lean-forward="true" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
+            <state relative-caret-position="314">
+              <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
             </state>
           </provider>
         </entry>
@@ -176,6 +167,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -272,6 +264,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="TERM" value="xterm-color" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basic_07" />
@@ -308,6 +301,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.04-循环结构" />
+      <item itemvalue="Python.05-总结和练习" />
+      <item itemvalue="Python.06-函数和模块的使用" />
+      <item itemvalue="Python.07-字符串和常用数据结构" />
+      <item itemvalue="Python.foo_test_03" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.07-字符串和常用数据结构" />
@@ -333,7 +333,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1325" y="23" width="1227" height="1417" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24875621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -355,13 +354,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="239" column="24" lean-forward="true" selection-start-line="225" selection-end-line="252" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_basic_01/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -474,10 +466,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="307" column="36" selection-start-line="307" selection-start-column="36" selection-end-line="307" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="261" column="17" lean-forward="true" selection-start-line="261" selection-start-column="17" selection-end-line="261" selection-end-column="17" />
+        <state relative-caret-position="314">
+          <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
         </state>
       </provider>
     </entry>

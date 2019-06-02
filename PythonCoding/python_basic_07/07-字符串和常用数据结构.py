@@ -352,16 +352,229 @@ def main_dict():
     print('**********判断子集**********')
     print(set2 <= set1)
     print(set2.issubset(set1))
-    
+
     # 判断超集
     print('**********判断超集**********')
     print(set1 >= set2)
     print(set1.issuperset(set2))
 
 
+# ****************************
+# 使用字典
+# ****************************
+
+def main_dictionary():
+
+    # 创建字典
+    scores = {'骆昊': 95, '白元芳': 78, '狄仁杰': 82}
+    print('**********创建字典**********')
+    print(scores)
+
+    # 通过键获取字典中的值
+    print('**********通过键获取字典中的值**********')
+    print(scores['狄仁杰'])
+
+    # 对字典进行遍历
+    print('**********对字典进行遍历**********')
+    for elem in scores:
+        print('%s\t--->\t%d'%(elem,scores[elem]))
+
+    # 更新字典中的元素
+    print('**********更新字典中的元素**********')
+    scores['狄仁杰'] = 1000
+    print(scores)
+
+    # 更新字典添加元素
+    print('**********更新字典添加元素**********')
+    scores.update(王大爷=190,李分=9009)
+    print(scores)
+
+    # get方法也是通过键获取对应的值，但是可以设置默认值
+    print('***********get方法也是通过键获取对应的值，但是可以设置默认值***********')
+    print(scores.get('武则天',60))
+
+    # 删除字典中的元素
+    print('***********删除字典中的元素***********')
+    print(scores.popitem())
+    print(scores)
+    print(scores.pop('狄仁杰'))
+    print(scores)
+
+    # 清空字典
+    print('***********清空字典**********')
+    scores.clear()
+    print(scores)
+
+
+
+# ****************************
+# 练习
+# ****************************
+
+"""
+练习1：在屏幕上显示跑马灯文字
+"""
+
+import os
+import time
+
+def main_lianxi_01():
+    content = '北京欢迎你为你开天辟地…………'
+    print('**********在屏幕上显示跑马灯文字**********')
+    while True:
+        # 清理屏幕上的输出
+        os.system("clear")
+        print(content)
+        time.sleep(0.2)
+        content = content[1:] + content[0]
+
+"""
+练习2：设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成
+"""
+
+import random
+def generate_code(code_len = 4):
+    print('**********设计一个函数产生指定长度的验证码，验证码由大小写字母和数字构成**********')
+    all_chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    last_pos = len(all_chars) - 1
+    code = ''
+    for _ in range(code_len):
+        index = random.randint(0,last_pos)
+        code += all_chars[index]
+    return code
+
+"""
+练习3：设计一个函数返回给定文件名的后缀名
+"""
+
+def get_suffix(filename,has_dot=False):
+    """
+    获取文件后缀名
+    :param filename: 文件名
+    :param has_dot: 返回的后缀名是否需要带点
+    :return: 文件的后缀名
+    """
+    print('**********设计一个函数返回给定文件名的后缀名**********')
+    pos = filename.rfind('.')
+    if 0 < pos < len(filename) - 1:
+        index = pos if has_dot else pos+1
+        return filename[index:]
+    else:
+        return ''
+"""
+练习4：设计一个函数返回传入的列表中最大的和第二大的元素的值
+"""
+
+def get_max2(x):
+    print('**********设计一个函数返回传入的列表中最大的和第二大的元素的值**********')
+    m1,m2 = (x[0],x[1]) if (x[0] > x[1]) else (x[1],x[0])
+    for index in range(2,len(x)):
+        if x[index] > m1:
+            m2 = m1
+            m1 = x[index]
+        elif x[index] > m2:
+            m2 = x[index]
+    return m1,m2
+
+"""
+练习5：计算指定的年月日是这一年的第几天
+"""
+def is_leap_year(year):
+    """
+    判断指定的年份是不是闰年
+    :param year: 年份
+    :return: 闰年返回True平年返回False
+    """
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+
+def which_day(year,month,date):
+    """
+    计算传入的日期是这一年的第几天
+    :param year: 年
+    :param month: 月
+    :param date: 日
+    :return: 第几天
+    """
+    print('**********计算指定的年月日是这一年的第几天**********')
+    days_of_month = [
+        [31,28,31,30,31,30,31,31,30,31,30,31],
+        [31,29,31,30,31,30,31,31,30,31,30,31]
+    ][is_leap_year(year)]
+    total = 0
+    for index in range(month-1):
+        total += days_of_month[index]
+    return total + date
+
+"""
+练习6：打印杨辉三角
+"""
+
+def main_lianxi_06():
+    print('**********打印杨辉三角**********')
+    num = int(input('Number of rows: '))
+    yh = [[]] * num
+    print(yh)
+    print([None] * num)
+    for row in range(len(yh)):
+        yh[row] = [None] * (row + 1)
+        for col in range(len(yh[row])):
+            if col == 0 or col == row:
+                yh[row][col] = 1
+            else:
+                yh[row][col] = yh[row - 1][col] + yh[row - 1][col - 1]
+            print(yh[row][col],end='\t')
+        print()
+
+# ****************************
+# 综合案例
+# ****************************
+
+"""
+综合案例1：双色球选号
+"""
+
+from random import randrange,randint,sample
+
+def display(balls):
+    """
+    输入列表中的双色球号码
+    :param balls: 双色球
+    :return:
+    """
+
+    for index,ball in enumerate(balls):
+        if index == len((balls)) - 1:
+            print('|',end='')
+        print('%02d\t'%ball,end='')
+    print()
+
+def random_select():
+    """
+    随机选择一组号码
+    :return:
+    """
+    red_balls = [x for x in  range(1,34)]
+    selected_balls = []
+    selected_balls = sample(red_balls,6)
+    selected_balls.sort()
+    selected_balls.append(randint(1,16))
+    return selected_balls
+
+def main_zonghe_01():
+    print('**********双色球选号**********')
+    n = int(input('机选几注：'))
+    for _ in range(n):
+        display(random_select())
 
 if __name__ == '__main__':
     # main()
     # main_list()
     # main_List()
-    main_dict()
+    # main_dict()
+    # main_dictionary()
+    # main_lianxi_01()
+    # print(generate_code(30))
+    # print(get_max2((1,2,3,4,5,6,7,8,9))
+    # print(which_day(2001,12,3))
+    # main_lianxi_06()
+    main_zonghe_01()
