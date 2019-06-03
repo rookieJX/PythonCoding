@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84afdae7-955e-466e-b477-55f332045655" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/python_basic_08/08-面向对象编程基础.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_basic_08/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python_basic_06/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_basic_06/06-函数和模块的使用.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,17 +26,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_basic_07/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python_basic_08/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python_basic_08/08-面向对象编程基础.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="673">
+              <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
+            <state relative-caret-position="2777">
+              <caret line="548" column="11" selection-start-line="548" selection-start-column="11" selection-end-line="548" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -126,6 +136,8 @@
         <option value="$PROJECT_DIR$/python_basic_06/06-函数和模块的使用.py" />
         <option value="$PROJECT_DIR$/python_basic_07/__init__.py" />
         <option value="$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py" />
+        <option value="$PROJECT_DIR$/python_basic_08/__init__.py" />
+        <option value="$PROJECT_DIR$/python_basic_08/08-面向对象编程基础.py" />
       </list>
     </option>
   </component>
@@ -154,6 +166,11 @@
               <item name="PythonCoding" type="b2602c69:ProjectViewProjectNode" />
               <item name="PythonCoding" type="462c0819:PsiDirectoryNode" />
               <item name="python_basic_07" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonCoding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonCoding" type="462c0819:PsiDirectoryNode" />
+              <item name="python_basic_08" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -194,28 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.07-字符串和常用数据结构">
-    <configuration name="04-循环结构" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonCoding" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basic_04" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basic_04/04-循环结构.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.08-面向对象编程基础">
     <configuration name="05-总结和练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonCoding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -280,6 +276,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="08-面向对象编程基础" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonCoding" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python_basic_08" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_basic_08/08-面向对象编程基础.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="foo_test_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonCoding" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,19 +319,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.04-循环结构" />
       <item itemvalue="Python.05-总结和练习" />
       <item itemvalue="Python.06-函数和模块的使用" />
       <item itemvalue="Python.07-字符串和常用数据结构" />
       <item itemvalue="Python.foo_test_03" />
+      <item itemvalue="Python.08-面向对象编程基础" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.08-面向对象编程基础" />
         <item itemvalue="Python.07-字符串和常用数据结构" />
         <item itemvalue="Python.06-函数和模块的使用" />
         <item itemvalue="Python.foo_test_03" />
         <item itemvalue="Python.05-总结和练习" />
-        <item itemvalue="Python.04-循环结构" />
       </list>
     </recent_temporary>
   </component>
@@ -333,6 +350,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1325" y="23" width="1227" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24875621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -410,6 +428,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="307" column="36" selection-start-line="307" selection-start-column="36" selection-end-line="307" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_basic_06/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -421,13 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python_basic_07/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -466,17 +484,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/random.py">
+    <entry file="file://$PROJECT_DIR$/python_basic_07/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="307" column="36" selection-start-line="307" selection-start-column="36" selection-end-line="307" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basic_08/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python_basic_07/07-字符串和常用数据结构.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="549" lean-forward="true" selection-start-line="549" selection-end-line="549" />
+        <state relative-caret-position="2777">
+          <caret line="548" column="11" selection-start-line="548" selection-start-column="11" selection-end-line="548" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_basic_08/08-面向对象编程基础.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="174" column="13" lean-forward="true" selection-start-line="174" selection-start-column="13" selection-end-line="174" selection-end-column="13" />
         </state>
       </provider>
     </entry>
