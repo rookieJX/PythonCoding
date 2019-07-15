@@ -188,8 +188,65 @@ def use_triangle():
         print(t.perimeter())
         print(t.area())
 
+
+'''
+类之间的关系
+简单的说，类和类之间的关系有三种：is-a、has-a、和use-a关系。
+
+- is-a关系也叫做继承或者泛化，比如学生和人的关系、手机和电子产品的关系都属于继承关系
+
+- has-a关系通常称为关联，比如部门和员工的关系，汽车和引擎的关系都属于关联关系；关联关系如果是整体和部分的关联，那么我们称之为聚合关系；
+   如果整体进一步负责了部分的生命周期（整体和部分是不可分割的，同时同在也同时消亡），那么这种就是最强的关联关系，我们称之为合成关系
+   
+- use-a关系通常称之为依赖，比如司机有一个驾驶的行为（方法），其中（的参数）使用到了汽车，那么司机和汽车的关系就是依赖关系。
+'''
+
+
+'''
+继承和多态
+
+我们可以让一个类从了另一个类那里将属性和方法直接继承下来，从而减少重复代码的编写。
+提供继承信息的我们称之为父类，也叫超类或者基类；
+得到继承信息的我们称之为子类，也叫派生类或者衍生类。
+子类除了继承父类提供的属性和方法，还可以定义自己特有的属性和方法，所以子类比父类拥有的更多的能力。
+
+子类在继承了父类的方法后，可以对父类已有的方法给出新的实现版本，这个动作称之为方法重写。
+通过方法重写我们可以让父类的同一个行为在子类中拥有不同的实现版本，当我们调用这个经过子类重写的方法时，不同的子类对象会表现出不同的行为，这个行为就是多态。
+
+'''
+
+from abc import ABCMeta,abstractclassmethod
+
+class Pet(object,metaclass=ABCMeta):
+    '''宠物'''
+
+    def __init__(self,nickname):
+        self._nickname = nickname
+
+    @classmethod
+    def make_vioce(self):
+        '''发出声音'''
+        pass
+
+class Dog(Pet):
+    '''狗'''
+    def make_vioce(self):
+        print('%s: 狗叫.....'%self._nickname)
+
+class Cat(Pet):
+    '''猫'''
+    def make_vioce(self):
+        print('%s: 猫叫.....'%self._nickname)
+
+
+def use_pet():
+    pets = [Dog('旺财'),Cat('凯撒'),Cat('庞贝')]
+    for pet in pets:
+        pet.make_vioce()
+
 if __name__ == '__main__':
     # use_person()
     # use_slots_person()
     # use_triangle()
-    use_clock()
+    # use_clock()
+    use_pet()
